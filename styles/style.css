@@ -15,7 +15,6 @@ body {
     height: 132px;
     padding: 24px 20px;
     align-items: flex-start;
-    gap: 168px;
     flex-shrink: 0;
 }
 .header-row {
@@ -39,12 +38,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
-    margin-left: 168px;
+    gap: 13px;
+    margin-left: 172px;
 }
 
 .menu-main {
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -54,7 +53,7 @@ body {
 }
 .menu-item {
     color: #f5f5f5;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -71,11 +70,12 @@ body {
 
 .banner-span {
     color: #fff;
-    font-family: EB Garamond;
+    font-family: EB Garamond, serif;
     font-size: 72px;
     font-style: normal;
     font-weight: 400;
     line-height: 100%;
+    padding-top: 8px;
     /*margin-bottom: 30px;*/
 }
 
@@ -105,11 +105,11 @@ body {
 
 .intro {
     display: inline-flex;
-    height: 453px;
+    height: 473px;
     flex-direction: column;
     align-items: flex-start;
-    margin: 30px 20px 38px;
-    gap: 24px;
+    margin: 30px 20px 22px;
+    /*gap: 24px;*/
     flex-shrink: 0;
 }
 .intro-heading {
@@ -124,38 +124,48 @@ body {
     width: 203px;
     flex-shrink: 0;
     color: #CCC;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 120%; /* 19.2px */
+    padding-top: 4px;
 }
 
 .intro-date {
     color: #CCC;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 120%; /* 19.2px */
+    padding: 3px;
 }
 
-.intro-chapter {
+.intro-chapter_one,
+.intro-chapter_two {
     color: #F5F5F5;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 21.6px; /* 135% */
 }
 
+.to_do_new {
+    padding-top: 8px;
+}
+.to_do_before {
+    margin-top: 8px;
+}
+
 .yellow-content {
-    /*display: inline-flex;*/
-    /*height: 1368px;*/
+    display: inline-flex;
+    height: 1367px;
     padding: 40px 20px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 32px;
+    /*gap: 32px;*/
     flex-shrink: 0;
     background: #FEE42A;
 }
@@ -171,7 +181,7 @@ body {
     color: #131313;
     display: block;
     text-align: right;
-    font-family: EB Garamond;
+    font-family: EB Garamond, serif;
     font-size: 28px;
     font-style: normal;
     font-weight: 500;
@@ -180,30 +190,32 @@ body {
 
 .title-left {
     color: #131313;
-    font-family: EB Garamond;
+    font-family: EB Garamond, serif;
     font-size: 28px;
     font-style: normal;
     font-weight: 500;
     line-height: 115%; /* 32.2px */
+    padding-left: 24px;
 }
 
-.reason-text,
-.how-to-text {
+.reason-text {
     width: 320px;
-    /*height: 297px;*/
+    height: 297px;
     flex-shrink: 0;
     color: #131313;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    /*line-height: 27px; /* 135% */
+    line-height: 27px;
+    padding-top: 11px;
 }
 
 .reason-list {
     display: flex;
     width: 320px;
-    padding-left: 20px;
+    padding-left: 15px;
+    padding-top: 8px;
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
@@ -211,16 +223,17 @@ body {
 
 .reason-list-item {
     color: #131313;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 21.6px;
+    padding-left: 1px;
 }
 
 .item-accent {
     color: #131313;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -228,7 +241,7 @@ body {
 }
 
 .black-content {
-    padding: 40px 20px;
+    padding: 42px 20px;
     flex-direction: column;
     align-items: flex-start;
     gap: 32px;
@@ -241,25 +254,34 @@ body {
     color: #F5F5F5;
 }
 
-.title-to-right {
+.how-to-title-start {
+    display: block;
     text-align: right;
-    font-family: EB Garamond;
+    font-family: EB Garamond, serif;
     font-size: 28px;
     font-style: normal;
     font-weight: 500;
     line-height: 115%; /* 32.2px */
-}
-
-.title-to-left {
-    font-family: EB Garamond;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 115%; /* 32.2px */
-}
-
-.title-white {
     color: #F5F5F5;
+}
+
+.how-to-title-do {
+    font-family: EB Garamond, serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 115%; /* 32.2px */
+    color: #f5f5f5;
+}
+
+.how-to-text {
+    color: #F5F5F5;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%; /* 27px */
+    padding-top: 12px;
 }
 
 .card-list {
@@ -267,7 +289,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 32px;
-    padding: 20px 0;
+    padding: 10px 0;
     list-style-type: none;
 }
 
@@ -275,7 +297,7 @@ body {
     display: flex;
     color:#F5F5F5;
     width: 319px;
-    padding: 20px;
+    padding: 21px 20px;
     flex-direction: column;
     border-radius: 30px;
     align-items: flex-start;
@@ -283,21 +305,30 @@ body {
 }
 
 .bright {
+    height:368px;
     border-radius: 30px;
     background: #FEE42A;
+    color: #131313;
+    padding-top: 14px;
 }
 
-.dark {
+.dark_polyarinov {
+    height: 495px;
+    border-radius: 30px;
+    background: #343434;
+}
+
+.dark_bunin {
+    height: 559px;
     border-radius: 30px;
     background: #343434;
 }
 
 .polyarinov,
- .bunin {
+.bunin {
     width: 100px;
     height: 100px;
     border-radius: 50px;
-    background: light;
 }
 
 .card-author {
@@ -309,7 +340,7 @@ body {
 
 .author-name {
     color: #F5F5F5;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -317,8 +348,10 @@ body {
 }
 
 .card-title {
+    display: flex;
+    padding-top: 8px;
     color: #F5F5F5;
-    font-family: EB Garamond;
+    font-family: EB Garamond, serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 500;
@@ -326,29 +359,29 @@ body {
 }
 
 .card-text {
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 21.6px; /* 135% */
+    margin-top: 7px;
 }
-
-.without-foto {
+.without_photo {
     color: #131313;
 }
 
 .footer-block {
     display: flex;
     width: 360px;
-    padding: 20px;
+    padding: 14px 20px;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #FEE42A;
+    /*border-top: 1px solid #FEE42A;*/
 }
 
 .footer-copy {
     color: #F5F5F5;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -358,5 +391,5 @@ body {
 .footer-links {
     display: flex;
     align-items: flex-start;
-    gap: 16px;
+    gap: 10px;
 }
